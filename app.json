@@ -14,14 +14,29 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-build-properties",
+           {
+              "ios": {
+                  "deploymentTarget": "13.0"
+              }
+           }
+       ]
+   ],
+   "autolinking": {
+    "exclude": "expo-constants"
+  },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.taylortheory.tinyvue2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.taylortheory.tinyvue2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
