@@ -56,7 +56,7 @@ const PlayButton = ({ size, circle, icon, onPress }) => (
 
 const Container = styled.TouchableOpacity`
     width: ${props => props.size || 78}px;
-    height: ${props => props.size || 78}px;
+    height: ${props => props.size || 78}px ;
     justify-content: center;
     align-items: center
 `;
